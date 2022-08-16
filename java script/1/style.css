@@ -1,0 +1,39 @@
+body{
+    background-color: #eee;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 250px;
+}
+
+button{
+    border: 2px solid black;
+    font-size: 40px;
+    padding: 20px;
+    width: 110px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: aquamarine;
+    font-size: 41px;
+}
+.display{
+    background-color: #d9d8d8;
+    width: 420px;
+    height: 100px;
+    margin-left: 34.5%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blueviolet;
+}
+#dis{
+    font-size: 40px;
+}
+#paragraph_dis{
+    font-size: 30px;
+    text-align: center;
+}
