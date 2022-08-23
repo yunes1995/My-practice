@@ -1,0 +1,103 @@
+body {
+    background-color: lemonchiffon;
+}
+.main {
+display: flex;
+justify-content: center;
+align-items:center;
+}
+
+.baksh_vorodi {
+border: 2px solid brown;
+background-color: rgba(165, 42, 42, 0.171);
+height: 160px;
+width: 50%;
+text-align: center;
+box-sizing: border-box;
+padding: 20px;
+border-radius: 16px;
+}
+
+.abzar {
+    margin-top: 10px;
+}
+.abzar button{
+    display:block;
+    padding: 5px;
+    margin: 15px auto;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 115px;
+    margin-top: 36px;
+}
+.abzar label{
+    font-size: 19px;
+    margin-right: 5px ;
+}
+ /*----------------------nemayesh----------------*/
+
+ .nemayesh {
+    width: 90%;
+    height: 200px;
+    margin: 10px auto;
+    background-color: rgba(0, 128, 0, 0.24);
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+ }
+
+.btn_show {
+ padding: 5px;
+ font-size: 20px;
+ border: 1px solid;
+ border-radius: 7px;
+}
+
+.div_show1 {
+    width: 80px;
+    height: 50px;
+    background-color: #04040426;
+    margin-top: 30px;
+}
+
+.div_show2 {
+    width: 250px;
+    height: 50px;
+    background-color: #04040426;
+    margin-top: 30px;
+}
+/* ---------------which member -----------------*/
+.last_part {
+    margin: 10px auto;
+    width: 98%;
+    height: 218px;
+    background-color: silver;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+   
+}
+.which_member {
+    background-color: #c2e5d9;
+    width: 47%;
+    height: 95%;
+    border: 1px solid;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.which_member button {
+    padding: 17px;
+    font-size: 18px;
+    width: 50%;
+}
+
+button:hover {
+    background-color: rgba(165, 42, 42, 0.199);
+}
