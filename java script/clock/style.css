@@ -1,0 +1,35 @@
+
+body{
+    background-image: url("../colck/pic/new.jpg");
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+
+
+.clock{
+    width: 366px;
+    height: 155px;
+    border: 4px solid silver;
+    border-radius: 20px;
+    background-color: #b18d8d8f;
+    top: 132px;
+    position: absolute;
+    right: 174px;
+    display: flex;
+}
+.clock .show_time {
+    font-size: 60px;
+    margin: 43px auto;
+    display: block;
+}
+
+.show_date{
+    font-size: 29px;
+    color: brown;
+    position: absolute;
+    bottom: 33px;
+    right: 173px;
+    border: 2px solid burlywood;
+    padding: 15px;
+    border-radius: 60px;
+}
