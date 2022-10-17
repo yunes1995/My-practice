@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*******************بازگشتی*******************/
+        // let num = 0 ;
+        // function numplus(){
+        //     num ++ ;
+        //     if(num == 101){ return num};
+        //     console.log(num)
+        //     numplus();
+        // }
+
+        // numplus();
+        /*******************بازگشتی*******************/
+
+        /*******************arrow function*******************/
+        // let lastName = prompt("what's your name?");
+
+        // const  youeName = (yuser) =>{
+        //     console.log(`hi ${yuser} how are you?`)
+        // }
+
+        // youeName(lastName);
+
+        /*******************arrow function*******************/
+
+
+        /*******************rest parameters******************/
+        // function sumAll(...agrs) {
+        //     let sum = 0 ;
+        //     for(let arg of agrs){
+        //         sum += arg;
+        //     }
+        //     return sum;
+        // }
+        // // sumAll(1);
+        // alert(sumAll(1,5,9)); // 15
+        // alert(sumAll(1,5)); //6
+
+
+        /*******************rest parameters******************/
+
+        /*******************spread syntax******************/
+        // const collection1 = [1, 2, 3, 4, 5];
+        // const collection2 = [6, 7, 8, 9, 10];
+        // let allNum = [...collection1, ...collection2]; // mergeing two array with together
+
+        // console.log(Math.max(...collection1))
+        // console.log(allNum);
+
+
+        /*******************spread syntax******************/
+
+        /*******************کپی کردن یک آبجکت******************/
+        const yuser = {
+            name : "yunes", 
+            lastName : "mohammadi"
+        }
+        
+        const yuser2 = {...yuser};
+        
+        yuser2.name = "ali";
+        console.log(yuser2);
+        console.log(yuser);
+
+
+        /*******************کپی کردن یک آبجکت******************/
+    </script>
+</body>
+
+</html>
