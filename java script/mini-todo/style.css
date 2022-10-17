@@ -1,0 +1,48 @@
+
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    width: 100%;
+    height: 100px;
+}
+
+
+.btn{
+    width: 20%;
+    margin: 0 auto;
+    border: 2px solid blueviolet;
+    padding: 10px;
+    font-size: 16px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.firstLine{
+    margin-top: 28px !important;
+}
+
+.content {
+width: 100%;
+background-color: cadetblue;
+height: 509px;
+display: grid;
+grid-template-columns: repeat(3 , 33%);
+
+}
+
+.newDiv{
+    border: 1px solid seagreen;
+    box-sizing: border-box;
+    width: 80%;
+    height: 150px;
+    margin-left: 25px;
+    background-color: brown;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: aliceblue;
+    
+}
