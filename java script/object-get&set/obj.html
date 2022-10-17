@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+         /************************  be rabesh liberal ***************/
+        let obj = {
+            name : "yunes",
+            family : "mohammadi",
+            get age(){
+                return this.myAge;
+            },
+            set age(Age){
+                if(Age < 20){
+                    console.log("your not acess for this web")
+                }else{
+                    console.log("welcom");
+                }
+                this.myAge = Age;
+            }
+        };
+        let x = prompt("how old are you?");
+        console.log(obj);
+        obj.age = x;
+        console.log(obj.age);
+
+        
+        /************************  be rabesh constroctor ***************/
+
+            function funcobj(){
+                this.name = "yunes",
+                this.family = "mohammadi",
+                
+                Object.defineProperties(this , {
+                    age : {
+                        get : function(){
+                            return this.userAge;
+                        },
+                        set : function(x){
+                            if(x < 20){
+                                alert("your baby");
+                            }else{
+                                alert("welcom");
+                            }
+                        }
+                    }
+                })
+            }
+
+        let num = prompt("how old are you?");
+        let test = new funcobj();
+        test.age = num;
+    </script>
+</body>
+
+</html>
