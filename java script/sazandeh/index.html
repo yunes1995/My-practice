@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // function Person(name , age , height , weight){
+
+        //     this.age = age;
+        //     this.height = height;
+        //     this.weight = weight;
+        //     this.bmi = function () {
+        //         // return (Math.sqrt(this.weight)) / (this.height/100);
+        //         let result = (Math.sqrt(this.weight)) / (this.height/100);
+        //         console.log("BMI this yuser is : " + result)
+        //     } ;
+        //     this.name = function() {
+        //         let yourName = name;
+        //         let resultName =yourName.charAt(0).toUpperCase() + yourName.slice(1);
+        //         return resultName;
+        //         // return yourName.charAt(0).toUpperCase() + yourName.slice(1);
+        //         // return yourName;
+        //     }
+        // }
+
+        // let yunes = new Person("yunes", 27 , 184 , 81);
+        // let ali = new Person("ali", 20 , 185 , 60);
+        // let mohsen = new Person("mohasen" ,25 ,180, 81);
+
+        // console.log(ali.name());
+        // console.log(yunes.name());
+        // console.log(yunes.weight);
+        // console.log(mohsen.bmi())
+
+        /************ 2 *************/
+
+        // let animal = {
+        //     legs : 4,
+        //     eyes : 2, 
+        //     dom : true
+        // }
+
+        // let dogs = {
+        //     // __proto__ :animal, ///////////// first way 
+        //     wool : true,
+        //     teeth : "sharp"
+        // }
+        // // dogs.__proto__ = animal; ////////// secoond way
+        // dogs.prototype = animal;
+        // console.log(dogs);
+
+        // console.log(animal);
+
+
+        /************ 3 *************/
+
+        function Member(name , lastname , age , number) {
+            this.firstName = name;
+            this.lastname = lastname;
+            this.age = age;
+            this.number = number;
+            var address = "sarpol"; // private variables
+        }
+        // function GetFullName (){
+        //     console.log(`Hi Mr ${this.lastname}, ${this.firstName} is very beautiful mame :)`) 
+        // }
+        
+        Member.prototype.name = function() { //میتوان تابع فول نیم را جای این قرار داد البته نیازی به پرانتز جلوی آن نیست
+        console.log(`Hi Mr ${this.lastname}, ${this.firstName} is very beautiful mame :)`) 
+       }
+
+        let yuser1 = new Member("yunes" , "mohammadi" , 27 , 9012491519);
+        let yuser2 = new Member("hosein", "mohammai" , 29 , 9180515351);
+
+       
+    //    console.log(yuser1.name());
+    //    console.log(yuser2.name());
+
+       console.log(yuser1.address); // private variables = undifened
+        // Member.GetFullName(yuser1);
+        // console.log(yuser1);
+        // console.log(yuser2);
+
+    </script>
+</body>
+
+</html>
