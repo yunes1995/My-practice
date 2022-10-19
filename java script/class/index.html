@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+        // class birds {
+        //     constructor(name) {
+        //         this.name = name;
+        //         this.par = true;
+        //     }
+        //     SayWelcome() {
+        //         console.log(`Hi ${this.name} welcome to jungle...`)
+        //     }
+        // }
+        // class oghab extends birds {
+        //  fly = true;
+        //  shekar = true;
+        // message(){
+        //     console.log(`im ${this.name} pas ehtram bezarid..`);
+        // }
+        // }
+
+
+        // let yuser1 = new birds("chiken");
+        // let yuser2 = new birds("gonjeshk");
+        // // console.log(yuser2);
+        // // console.log(yuser1.SayWelcome());
+
+        // let yuser3 = new oghab("Oghab_tanha");
+        // console.log(yuser3);
+        // console.log(yuser3.message());
+        // console.log(yuser3.par);
+
+
+        /* ارث بری پویا */
+
+        // function Hi(name) {
+        //     console.log("Hi " + name);
+        // }
+
+        // class user extends Hi("yunes"){
+        // };
+
+        // let user1 = new user();
+        // // console.log(user1);
+        //  user1.Hi();
+ 
+        //  /*
+
+
+
+        /* ----------------overloading and overridding------------*/ 
+
+        class studen{
+            constructor(name, lastname){
+                this.name = name,
+                this.lastname = lastname
+            }
+
+            static schools = "abozar";
+
+           sayhi(){
+            console.log("-----Hi student------");
+           }
+        }
+
+        class ShahedStudent extends studen {
+            constructor(name,lastname, num){
+                super(name , lastname);
+                this.number = num;
+            }
+            
+            sayhi(){
+                super.sayhi(); // با این کار در واقع این متد را اورریدینگ کردیم
+            console.log("-----Hi Shahed------");
+           }
+
+        }
+        
+
+        let stdy1 = new studen("Yunes" , "Mohammadi");
+        let stdy2 = new studen("ali" , "karami");
+        let stdyShahed1 = new ShahedStudent("mohasen" , "khodai" ,32);
+        
+        // stdyShahed1.sayhi();// چون که ما اوور ریدینگ کردیم پس در اینجا هر دو خروجی را مشاهده میکنیم یعنی کنسول لاگ هر دو تابع را
+
+        console.log(studen.schools);
+        // console.log(stdy1);
+        // console.log(stdy2);
+        // console.log(stdyShahed1);
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
